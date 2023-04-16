@@ -9,7 +9,7 @@ class CardSwiper extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Padding(
-      padding: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
       child: SizedBox(
         width: double.infinity,
         height: size.height * .5,
@@ -26,8 +26,7 @@ class CardSwiper extends StatelessWidget {
                 borderRadius: BorderRadius.circular(40),
                 child: const FadeInImage(
                   image: NetworkImage('https://via.placeholder.com/300x400'),
-                  placeholder:
-                      NetworkImage('https://via.placeholder.com/300x400'),
+                  placeholder: AssetImage('assets/no-image.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
